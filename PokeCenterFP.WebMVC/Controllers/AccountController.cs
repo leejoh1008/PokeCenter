@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using PokeCenter.Data;
 using PokeCenterFP.WebMVC.Models;
 
 namespace PokeCenterFP.WebMVC.Controllers
@@ -58,7 +59,8 @@ namespace PokeCenterFP.WebMVC.Controllers
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            return View();
+            LoginViewModel i = new LoginViewModel();
+            return View("Login", i);
         }
 
         //
@@ -139,7 +141,8 @@ namespace PokeCenterFP.WebMVC.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            return View();
+            RegisterViewModel i = new RegisterViewModel();
+            return View("Register",i);
         }
 
         //
