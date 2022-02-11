@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeCenterFP.WebMVC", "PokeCenterFP.WebMVC\PokeCenterFP.WebMVC.csproj", "{47A1A76B-FA7F-4A09-9F67-1ED784B5581F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeCenter.Data", "PokeCenter.Data\PokeCenter.Data.csproj", "{22AD7B75-8B91-4860-BA72-8A75F6A771A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeCenter.Models", "PokeCenter.Models\PokeCenter.Models.csproj", "{DF420F8B-2B4E-49F1-853F-DFD427D6D762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeCenter.Services", "PokeCenter.Services\PokeCenter.Services.csproj", "{F9A36134-0808-480E-98EC-9828D260AFA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47A1A76B-FA7F-4A09-9F67-1ED784B5581F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47A1A76B-FA7F-4A09-9F67-1ED784B5581F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47A1A76B-FA7F-4A09-9F67-1ED784B5581F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47A1A76B-FA7F-4A09-9F67-1ED784B5581F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22AD7B75-8B91-4860-BA72-8A75F6A771A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22AD7B75-8B91-4860-BA72-8A75F6A771A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22AD7B75-8B91-4860-BA72-8A75F6A771A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22AD7B75-8B91-4860-BA72-8A75F6A771A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF420F8B-2B4E-49F1-853F-DFD427D6D762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF420F8B-2B4E-49F1-853F-DFD427D6D762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF420F8B-2B4E-49F1-853F-DFD427D6D762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF420F8B-2B4E-49F1-853F-DFD427D6D762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A36134-0808-480E-98EC-9828D260AFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A36134-0808-480E-98EC-9828D260AFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A36134-0808-480E-98EC-9828D260AFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A36134-0808-480E-98EC-9828D260AFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD9CA335-78D4-485E-9696-C7243A9AB301}
+	EndGlobalSection
+EndGlobal

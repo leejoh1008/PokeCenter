@@ -1,0 +1,2 @@
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.csproj.AssemblyReference.cache
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.csproj.CoreCompileInputs.cache
