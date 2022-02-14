@@ -56,6 +56,15 @@
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Message.cs" />
+    <Compile Include="Migrations\202202111939188_InitialCreate.cs" />
+    <Compile Include="Migrations\202202111939188_InitialCreate.Designer.cs">
+      <DependentUpon>202202111939188_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202141645568_int to double.cs" />
+    <Compile Include="Migrations\202202141645568_int to double.Designer.cs">
+      <DependentUpon>202202141645568_int to double.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PCard.cs" />
     <Compile Include="PGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,6 +72,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202202111939188_InitialCreate.resx">
+      <DependentUpon>202202111939188_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202141645568_int to double.resx">
+      <DependentUpon>202202141645568_int to double.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

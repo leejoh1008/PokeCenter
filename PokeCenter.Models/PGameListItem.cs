@@ -5,21 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokeCenter.Data
+namespace PokeCenter.Models
 {
-    public class PGame
+    public class PGameListItem
     {
-        [Key]
+        
         public int PGameId { get; set; }
-        [Required]
-        public Guid OwnerId { get; set; }
-        [Required]
+        
         public string GameName { get; set; }
-        [Required]
+        
         public string Console { get; set; }
-        [Required]
+       
         public double GamePrice { get; set; }
-        [Required]
+        
         public bool HasCase { get; set; }
     }
 }

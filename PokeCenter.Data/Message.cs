@@ -21,6 +21,6 @@ namespace PokeCenter.Data
         [Required]
         public string Receiver { get; set; }
         //[Required]
-        //public DateTimeOffset CreatedUtc { get; set; }    <=MAYBE ADD A TIME SENT IF I HAVE TIME
+        //public DateTimeOffset CreatedUtc { get; set; } 
     }
 }

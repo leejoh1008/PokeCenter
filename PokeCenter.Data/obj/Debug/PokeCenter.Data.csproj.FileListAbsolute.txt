@@ -14,3 +14,6 @@ C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.csproj.CopyComplete
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.pdb
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.InitialCreate.resources
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.csproj.GenerateResource.cache
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.inttodouble.resources

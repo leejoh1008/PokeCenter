@@ -1,0 +1,57 @@
+﻿@model IEnumerable<PokeCenter.Models.PCardListItem>
+
+@{
+    ViewBag.Title = "CardIndex";
+}
+
+<h2>Pokemon Card Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "PCardCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PCardId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CardName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CardGrade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CardPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsHolo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PCardId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CardName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CardGrade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CardPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsHolo)
+        </td>
+        <td>
+           /* @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*/
+        </td>
+    </tr>
+}
+
+</table>
