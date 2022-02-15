@@ -241,6 +241,7 @@
     <Content Include="Views\PCard\CardIndex.cshtml" />
     <Content Include="Views\PGame\GameIndex.cshtml" />
     <Content Include="Views\Message\MessageIndex.cshtml" />
+    <Content Include="Views\PCard\CreatePokemonCard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

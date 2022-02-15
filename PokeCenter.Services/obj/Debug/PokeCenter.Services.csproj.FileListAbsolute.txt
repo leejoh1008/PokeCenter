@@ -17,3 +17,6 @@ C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Services\bin\Debug\PokeCenter.Models.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Services\bin\Debug\PokeCenter.Models.pdb
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Services\bin\Debug\PokeCenter.Models.dll.config
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Services\bin\Debug\PokeCenter.Data.dll
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Services\bin\Debug\PokeCenter.Data.pdb
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Services\bin\Debug\PokeCenter.Data.dll.config

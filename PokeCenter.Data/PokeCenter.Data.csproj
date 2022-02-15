@@ -64,6 +64,14 @@
     <Compile Include="Migrations\202202141645568_int to double.Designer.cs">
       <DependentUpon>202202141645568_int to double.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202141902518_Update-Database.cs" />
+    <Compile Include="Migrations\202202141902518_Update-Database.Designer.cs">
+      <DependentUpon>202202141902518_Update-Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202152029188_byte.cs" />
+    <Compile Include="Migrations\202202152029188_byte.Designer.cs">
+      <DependentUpon>202202152029188_byte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PCard.cs" />
     <Compile Include="PGame.cs" />
@@ -79,6 +87,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202141645568_int to double.resx">
       <DependentUpon>202202141645568_int to double.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202141902518_Update-Database.resx">
+      <DependentUpon>202202141902518_Update-Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202152029188_byte.resx">
+      <DependentUpon>202202152029188_byte.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

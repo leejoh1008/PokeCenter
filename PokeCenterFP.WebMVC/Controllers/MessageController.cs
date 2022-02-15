@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace PokeCenterFP.WebMVC.Controllers
 {
+    [Authorize]
     public class MessageController : Controller
     {
         // GET: Message

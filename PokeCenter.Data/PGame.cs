@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace PokeCenter.Data
 {
@@ -21,5 +22,7 @@ namespace PokeCenter.Data
         public double GamePrice { get; set; }
         [Required]
         public bool HasCase { get; set; }
+        [Required]
+         public byte[] GameImage { get; set; }
     }
 }

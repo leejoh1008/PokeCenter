@@ -1,4 +1,6 @@
-﻿using PokeCenter.Models;
+﻿using Microsoft.AspNet.Identity;
+using PokeCenter.Models;
+using PokeCenter.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,12 +15,39 @@ namespace PokeCenterFP.WebMVC.Controllers
         // GET: PCard
         public ActionResult CardIndex()
         {
-            var model = new PCardListItem[0];
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new PCardService(userId);
+            var model = service.GetPCards();
+
             return View(model);
         }
-        public ActionResult CreatePC()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreatePokemonCard()
         {
+           
             return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreatePokemonCard(PCardCreate model)
+        {
+            if (!ModelState.IsValid) return View(model);
+            
+            var service = CreatePCardService();
+            if (service.CreatePCard(model))
+            {
+                TempData["SaveResult"] = " Your Pokemon Card has been listed!";
+                return RedirectToAction("CardIndex");
+            };
+            ModelState.AddModelError("", "There was an error, please fix it!");
+            return View(model);
+        }
+        private PCardService CreatePCardService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new PCardService(userId);
+            return service;
         }
     }
 }

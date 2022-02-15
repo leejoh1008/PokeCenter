@@ -20,7 +20,7 @@ namespace PokeCenter.Data
         public string Content { get; set; }
         [Required]
         public string Receiver { get; set; }
-        //[Required]
-        //public DateTimeOffset CreatedUtc { get; set; } 
+        [Required]
+        public DateTimeOffset Created { get; set; } 
     }
 }

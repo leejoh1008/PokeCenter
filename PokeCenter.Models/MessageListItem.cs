@@ -12,7 +12,9 @@ namespace PokeCenter.Models
         /*public int MessageId { get; set; }*/
         
         public string Content { get; set; }
-        [Display(Name ="Sent to:")]
+        [Display(Name ="Message sent to:")]
         public string Receiver { get; set; }
+        [Display(Name = "Created")]
+        public DateTimeOffset Created { get; set; }
     }
 }

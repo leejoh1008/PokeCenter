@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PCardService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +62,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PokeCenter.Data\PokeCenter.Data.csproj">
+      <Project>{22ad7b75-8b91-4860-ba72-8a75f6a771a1}</Project>
+      <Name>PokeCenter.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PokeCenter.Models\PokeCenter.Models.csproj">
       <Project>{df420f8b-2b4e-49f1-853f-dfd427d6d762}</Project>
       <Name>PokeCenter.Models</Name>

@@ -23,5 +23,7 @@ namespace PokeCenter.Data
         public double CardPrice { get; set; }
         [Required]
         public bool IsHolo { get; set; }
+        [Required]
+        public byte[] CardImage { get; set; }
     }
 }

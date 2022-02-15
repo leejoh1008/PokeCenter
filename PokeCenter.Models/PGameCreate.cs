@@ -7,19 +7,21 @@ using System.Threading.Tasks;
 
 namespace PokeCenter.Models
 {
-    public class PGameListItem
+    public class PGameCreate
     {
-        
-        public int PGameId { get; set; }
-        
+        [Required]
+        [Display(Name = "Name of Game:")]
         public string GameName { get; set; }
-        
+        [Required]
         public string Console { get; set; }
-       
+        [Required]
+        [Display(Name = "Price:")]
         public double GamePrice { get; set; }
-        
+        [Required]
+        [Display(Name = "Case?: y or n")]
         public bool HasCase { get; set; }
-        
+        [Required]
         public byte[] GameImage { get; set; }
+
     }
 }
