@@ -4,11 +4,15 @@
     ViewBag.Title = "CardIndex";
 }
 
-<h2>Your Listed Pokemon Cards to sell</h2>
+<h2>CardIndex</h2>
 
 <p>
-    @Html.ActionLink("Create New", "CreatePokemonCard")
+    @Html.ActionLink("Create New", "CreatePC")
 </p>
+<p>
+    @Html.ActionLink("Edit a listing", "PCardEdit")
+</p>
+
 <table class="table">
     <tr>
         <th>
@@ -29,29 +33,33 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.PCardId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CardName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CardGrade)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CardPrice)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IsHolo)
-        </td>
-        <td>
-           /* @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*/
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PCardId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardGrade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsHolo)
+            </td>
+            <td>
+                <img src="/Content/RetrieveImage/@item.PCardId" alt="" height=100 width=200 />
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
 
 </table>

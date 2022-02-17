@@ -14,6 +14,6 @@ namespace PokeCenter.Models
         public double CardPrice { get; set; }
         public bool IsHolo { get; set; }
 
-        public byte[] GameImage { get; set; }
+        public byte[] CardImage { get; set; }
     }
 }

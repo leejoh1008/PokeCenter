@@ -1,5 +1,3 @@
-C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.csproj.AssemblyReference.cache
-C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.csproj.CoreCompileInputs.cache
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\PokeCenterFP.WebMVC.dll.config
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\PokeCenterFP.WebMVC.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\PokeCenterFP.WebMVC.pdb
@@ -112,6 +110,8 @@ C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.csproj.AssemblyReference.cache
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.csproj.CoreCompileInputs.cache
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.csproj.CopyComplete
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.pdb

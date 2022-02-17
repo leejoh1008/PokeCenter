@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
+using System.Web.Mvc;
 
 namespace PokeCenter.Models
 {
@@ -17,11 +19,13 @@ namespace PokeCenter.Models
         [Required]
         [Display(Name = "Price:")]
         public double GamePrice { get; set; }
+        [AllowHtml]
         [Required]
-        [Display(Name = "Case?: y or n")]
+        [Display(Name = "Case?:")]
         public bool HasCase { get; set; }
         [Required]
-        public byte[] GameImage { get; set; }
+
+        public HttpPostedFileBase GameFile { get; set; }
 
     }
 }

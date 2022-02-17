@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -19,7 +20,10 @@ namespace PokeCenter.Data
         [MaxLength(200, ErrorMessage = "You have written too much please reduce text!")]
         public string Content { get; set; }
         [Required]
+        [ForeignKey("User")]
         public string Receiver { get; set; }
+        
+        public virtual ApplicationUser User { get; set; }
         [Required]
         public DateTimeOffset Created { get; set; } 
     }

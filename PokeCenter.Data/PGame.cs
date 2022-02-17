@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,5 +25,7 @@ namespace PokeCenter.Data
         public bool HasCase { get; set; }
         [Required]
          public byte[] GameImage { get; set; }
+        [Required]
+        public string FileName { get; set; }
     }
 }

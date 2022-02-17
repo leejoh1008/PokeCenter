@@ -1,5 +1,3 @@
-C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.csproj.AssemblyReference.cache
-C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.csproj.CoreCompileInputs.cache
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\bin\Debug\PokeCenter.Data.dll.config
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\bin\Debug\PokeCenter.Data.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\bin\Debug\PokeCenter.Data.pdb
@@ -11,11 +9,16 @@ C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.csproj.CopyComplete
-C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.dll
-C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.pdb
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.csproj.AssemblyReference.cache
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.InitialCreate.resources
-C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.csproj.GenerateResource.cache
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.inttodouble.resources
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.UpdateDatabase.resources
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations._byte.resources
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.DataReloading.resources
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.csproj.GenerateResource.cache
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.csproj.CoreCompileInputs.cache
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.csproj.CopyComplete
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.dll
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.pdb
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.AddedFileType.resources
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.AddedPCardProp.resources

@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace PokeCenter.Models
 {
@@ -23,6 +24,6 @@ namespace PokeCenter.Models
         [Display(Name = "Holo?:")]
         public bool IsHolo { get; set; }
         [Required]
-         public byte[] CardImage { get; set; }
+        public HttpPostedFileBase CardFile { get; set; }
     }
 }

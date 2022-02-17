@@ -25,5 +25,7 @@ namespace PokeCenter.Data
         public bool IsHolo { get; set; }
         [Required]
         public byte[] CardImage { get; set; }
+        [Required]
+        public string FileName { get; set; }
     }
 }
