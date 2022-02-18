@@ -59,7 +59,6 @@ C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\Microsoft.Owin.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\Microsoft.Owin.Security.Cookies.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\Microsoft.Owin.Security.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\Microsoft.Owin.Security.Facebook.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\Microsoft.Owin.Security.Google.dll
@@ -115,3 +114,7 @@ C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.csproj.CopyComplete
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.dll
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\obj\Debug\PokeCenterFP.WebMVC.pdb
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\roslyn\System.Buffers.dll
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\roslyn\System.Memory.dll
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenterFP.WebMVC\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace PokeCenter.Data
 {
-    public class PCard
+    public class PCard : IPicture
     {
         [Key]
         public int PCardId { get; set; }
@@ -23,9 +25,8 @@ namespace PokeCenter.Data
         public double CardPrice { get; set; }
         [Required]
         public bool IsHolo { get; set; }
-        [Required]
-        public byte[] CardImage { get; set; }
-        [Required]
-        public string FileName { get; set; }
+        public byte[] FileContent { get; set; }
+        [NotMapped]
+        public HttpPostedFileBase File { get; set; }
     }
 }

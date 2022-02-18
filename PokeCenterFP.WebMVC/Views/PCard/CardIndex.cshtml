@@ -30,6 +30,9 @@
         <th>
             @Html.DisplayNameFor(model => model.IsHolo)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CardImage)
+        </th>
         <th></th>
     </tr>
 
@@ -50,6 +53,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.IsHolo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardImage)
             </td>
             <td>
                 <img src="/Content/RetrieveImage/@item.PCardId" alt="" height=100 width=200 />

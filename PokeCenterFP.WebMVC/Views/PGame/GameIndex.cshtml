@@ -53,8 +53,12 @@
         @Html.DisplayFor(modelItem => item.HasCase)
     </td>
     <td>
-        <img src="/Content/RetrieveImage/@item.PGameId" alt="" height=100 width=200 />
+        @Html.DisplayFor(modelItem => item.GameImage)
     </td>
+
+    <!--<td>
+        <img src="/Content/RetrieveImage/item.PGameId" alt="" height=100 width=200 />
+    </td>-->
     <td>
         @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
         @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |

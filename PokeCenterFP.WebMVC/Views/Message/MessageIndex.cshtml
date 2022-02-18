@@ -17,9 +17,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Content)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Receiver)
-        </th>
+        
         <th>
             @Html.DisplayNameFor(model => model.Created)
         </th>
@@ -34,17 +32,11 @@
     <td>
         @Html.DisplayFor(modelItem => item.Content)
     </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Receiver)
-    </td>
+    
     <th>
         @Html.DisplayNameFor(model => model.Created)
     </th>
-    <td>
-        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-    </td>
+    
 </tr>
     }
 

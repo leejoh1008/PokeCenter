@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace PokeCenter.Data
@@ -24,8 +26,8 @@ namespace PokeCenter.Data
         [Required]
         public bool HasCase { get; set; }
         [Required]
-         public byte[] GameImage { get; set; }
-        [Required]
-        public string FileName { get; set; }
+        public byte[] FileContent { get; set; }
+        [NotMapped]
+        public HttpPostedFileBase File { get; set; }
     }
 }

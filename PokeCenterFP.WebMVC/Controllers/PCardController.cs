@@ -31,12 +31,10 @@ namespace PokeCenterFP.WebMVC.Controllers
             {
                 return View(model);
             }
-            HttpPostedFileBase file = Request.Files["ImageData"];
-
-
+            
             PCardService service = CreatePCardService();
-            service.UploadImageInDataBase(file, model);
-            if (service.UploadImageInDataBase(file, model))
+            service.UploadImageInDataBase( model);
+            if (service.UploadImageInDataBase( model))
             {
                 TempData["SaveResult"] = "Your card was listed!";
 
@@ -47,7 +45,12 @@ namespace PokeCenterFP.WebMVC.Controllers
             return View(model);
 
         }
-
+        public ActionResult PCardDetail(int id)
+        {
+            var svc = CreatePCardService();
+            var model = svc.GetPCardById(id);
+            return View(model);
+        }
         public ActionResult EditPC(int id)
         {
             var service = CreatePCardService();
@@ -59,8 +62,9 @@ namespace PokeCenterFP.WebMVC.Controllers
                     CardName = detail.CardName,
                     CardPrice = detail.CardPrice,
                     CardGrade = detail.CardGrade,
-                    CardImage = detail.CardImage,
-                    IsHolo = detail.IsHolo
+                    IsHolo = detail.IsHolo,
+                    File = detail.File,
+                    FileContent = detail.FileContent
                 };
 
             return View(model);

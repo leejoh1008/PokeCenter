@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,8 @@ namespace PokeCenter.Models
         [Required]
         [Display(Name = "Holo?:")]
         public bool IsHolo { get; set; }
-        [Required]
-        public HttpPostedFileBase CardFile { get; set; }
+        public byte[] FileContent { get; set; }
+        [NotMapped]
+        public HttpPostedFileBase File { get; set; }
     }
 }

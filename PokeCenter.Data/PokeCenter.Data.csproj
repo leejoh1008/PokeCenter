@@ -50,6 +50,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="IPicture.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Migrations\202202111939188_InitialCreate.cs" />
     <Compile Include="Migrations\202202111939188_InitialCreate.Designer.cs">
@@ -87,6 +89,18 @@
     <Compile Include="Migrations\202202171728066_AddedPCardProp.cs" />
     <Compile Include="Migrations\202202171728066_AddedPCardProp.designer.cs">
       <DependentUpon>202202171728066_AddedPCardProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202180129468_DBUpdateImages.cs" />
+    <Compile Include="Migrations\202202180129468_DBUpdateImages.designer.cs">
+      <DependentUpon>202202180129468_DBUpdateImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202180732374_UpdatesOnDataLayer.cs" />
+    <Compile Include="Migrations\202202180732374_UpdatesOnDataLayer.designer.cs">
+      <DependentUpon>202202180732374_UpdatesOnDataLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202181833357_MessageUpdtee.cs" />
+    <Compile Include="Migrations\202202181833357_MessageUpdtee.designer.cs">
+      <DependentUpon>202202181833357_MessageUpdtee.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PCard.cs" />
@@ -118,6 +132,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202171728066_AddedPCardProp.resx">
       <DependentUpon>202202171728066_AddedPCardProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202180129468_DBUpdateImages.resx">
+      <DependentUpon>202202180129468_DBUpdateImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202180732374_UpdatesOnDataLayer.resx">
+      <DependentUpon>202202180732374_UpdatesOnDataLayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202181833357_MessageUpdtee.resx">
+      <DependentUpon>202202181833357_MessageUpdtee.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

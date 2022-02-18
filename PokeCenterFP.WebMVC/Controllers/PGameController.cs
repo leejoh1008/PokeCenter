@@ -31,12 +31,9 @@ namespace PokeCenterFP.WebMVC.Controllers
             {
                 return View(model);
             }
-            HttpPostedFileBase file = Request.Files["ImageData"];
-            
-           
             PGameService service = CreatePGameService();
-            service.UploadImageInDataBase(file, model);
-            if (service.UploadImageInDataBase(file, model) )
+            service.UploadImageInDataBase(model);
+            if (service.UploadImageInDataBase(model))
             {   
                 TempData["SaveResult"] = "Your game was listed!";
                
@@ -46,6 +43,12 @@ namespace PokeCenterFP.WebMVC.Controllers
             ModelState.AddModelError("", "Note could not be created.");
             return View(model);
             
+        }
+        public ActionResult PGameDetail(int id)
+        {
+            var svc = CreatePGameService();
+            var model = svc.GetPGameById(id);
+            return View(model);
         }
 
         public ActionResult EditPG(int id)
@@ -58,9 +61,10 @@ namespace PokeCenterFP.WebMVC.Controllers
                     PGameId = detail.PGameId,
                     GameName = detail.GameName,
                     GamePrice = detail.GamePrice,
-                    GameImage = detail.GameImage,
                     HasCase = detail.HasCase,
-                    Console = detail.Console
+                    Console = detail.Console,
+                    File = detail.File,
+                    FileContent = detail.FileContent
                 };
 
             return View(model);
@@ -96,6 +100,7 @@ namespace PokeCenterFP.WebMVC.Controllers
             var service = new PGameService(userID);
             return service;
         }
+
         public ActionResult DeletePG(int id)
         {
             var svc = CreatePGameService();
@@ -116,7 +121,13 @@ namespace PokeCenterFP.WebMVC.Controllers
 
             TempData["SaveResult"] = "Your Pokemon card listing was successfully deleted!";
 
-            return RedirectToAction("CardIndex");
+            return RedirectToAction("GameIndex");
+        }
+        public ActionResult GetImage(int Id)
+        {
+            var service = CreatePGameService();
+            byte[] bytes = service.GettingImage(Id); //Get the image from your database
+            return File(bytes, "image/png"); //or "image/jpeg", depending on the format
         }
     }
 }

@@ -16,9 +16,15 @@ namespace PokeCenter.Data
         [Required]
         public Guid OwnerId { get; set; }
         [Required]
+        [MinLength(1, ErrorMessage = "Please include a title!")]
+        public string Title { get; set; }
+        [Required]
         [MinLength(1, ErrorMessage = "Please type to message this person!")]
         [MaxLength(200, ErrorMessage = "You have written too much please reduce text!")]
         public string Content { get; set; }
+        [Required]
+        [MinLength(1, ErrorMessage = "Please leave a gmail to repond to!")]
+        public string Email { get; set; }
         [Required]
         [ForeignKey("User")]
         public string Receiver { get; set; }

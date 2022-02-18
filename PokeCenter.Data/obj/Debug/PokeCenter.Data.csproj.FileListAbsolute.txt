@@ -22,3 +22,6 @@ C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.pdb
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.AddedFileType.resources
 C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.AddedPCardProp.resources
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.DBUpdateImages.resources
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.UpdatesOnDataLayer.resources
+C:\Users\Johns\Documents\ElevenFiftyProjects\REDBADGEFINAL\PokeCenter\PokeCenter.Data\obj\Debug\PokeCenter.Data.Migrations.MessageUpdtee.resources

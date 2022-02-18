@@ -21,12 +21,22 @@ namespace PokeCenterFP.WebMVC.Controllers
 
             return View(model);
         }
+        public ActionResult Notifications()
+        {
+            var userID = Guid.Parse(User.Identity.GetUserId());
+            var service = new MessageService(userID);
+            var model = service.ReceiveMessages();
+
+            return View(model);
+        }
+
         public ActionResult CreateMessage()
         {
             MessageCreate model = new MessageCreate();
             return View(model);
         }
         [HttpPost]
+        [ActionName("CreateMessage")]
         [ValidateAntiForgeryToken]
         public ActionResult CreateMessage(MessageCreate model)
         {
@@ -39,11 +49,11 @@ namespace PokeCenterFP.WebMVC.Controllers
 
             if (service.CreateMessage(model))
             {
-                TempData["SaveResult"] = "Your note was created!";
-                return RedirectToAction("Index");
+                TempData["SaveResult"] = "Your message was sent!";
+                return RedirectToAction("Notifications");
             }
 
-            ModelState.AddModelError("", "Note could not be created.");
+            ModelState.AddModelError("", "Your message couldn't be sent.");
 
             return View(model);
         }
@@ -56,7 +66,7 @@ namespace PokeCenterFP.WebMVC.Controllers
             return View(model);
         }
 
-        public ActionResult Delete(int id)
+        public ActionResult DeleteMessage(int id)
         {
             var svc = CreateMessageService();
             var model = svc.GetMessageById(id);
@@ -74,9 +84,9 @@ namespace PokeCenterFP.WebMVC.Controllers
 
             service.DeleteMessage(id);
 
-            TempData["SaveResult"] = "Your note was successfully deleted!";
+            TempData["SaveResult"] = "Your listing was successfully deleted!";
 
-            return RedirectToAction("MessageIndex");
+            return RedirectToAction("Notifications");
         }
 
         private MessageService CreateMessageService()

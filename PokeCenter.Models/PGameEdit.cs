@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Web.Mvc;
 
 namespace PokeCenter.Models
@@ -24,8 +26,8 @@ namespace PokeCenter.Models
         [Required]
         [Display(Name = "Case?:")]
         public bool HasCase { get; set; }
-        [Required]
-        //[RegularExpression(@"([a-zA-Z0-9\s_\\.\-:])+(.png|.jpg|.gif)+(.PNG|.JPG|.GIF)$", ErrorMessage = "Only Image files allowed.")]
-        public byte[] GameImage { get; set; }
+        public byte[] FileContent { get; set; }
+        [NotMapped]
+        public HttpPostedFileBase File { get; set; }
     }
 }

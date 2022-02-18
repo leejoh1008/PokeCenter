@@ -14,7 +14,11 @@ namespace PokeCenter.Models
         [Required]
         public Guid OwnerId { get; set; }
         [Required]
+        public string Title { get; set; }
+        [Required]
         public string Content { get; set; }
+        [Required]
+        public string Email { get; set; }
         [Required]
         public string Receiver { get; set; }
         [Display(Name ="Created")]
