@@ -21,8 +21,5 @@ namespace PokeCenter.Models
         public double CardPrice { get; set; }
         [Required]
         public bool IsHolo { get; set; }
-        public byte[] FileContent { get; set; }
-        [NotMapped]
-        public HttpPostedFileBase File { get; set; }
     }
 }

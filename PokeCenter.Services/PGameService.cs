@@ -33,6 +33,7 @@ namespace PokeCenter.Services
 
             var content = new PGame()
             {
+                OwnerId = _userID,
                 GameName = contentViewModel.GameName,
                 GamePrice = contentViewModel.GamePrice,
                 Console = contentViewModel.Console,
@@ -44,9 +45,8 @@ namespace PokeCenter.Services
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Configuration.AutoDetectChangesEnabled = false;
+                
                 ctx.PokemonGames.Add(content);
-                ctx.Configuration.AutoDetectChangesEnabled = true;
                 return ctx.SaveChanges() == 1;
 
             }
@@ -72,30 +72,49 @@ namespace PokeCenter.Services
                     };
             }
         }
-        /*public string GetGameName(int id)
+        public IEnumerable<PGameListItem> GetAllPGame()
         {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var queury =
+                    ctx
+                        .PokemonGames
+                        .Where(e => e.OwnerId == _userID)
+                        .Select(entity => new PGameListItem
+                        {
+                            PGameId = entity.PGameId,
+                            GameName = entity.GameName,
+                            GamePrice = entity.GamePrice,
+                            HasCase = entity.HasCase,
+                            Console = entity.Console,
+                            FileContent = entity.FileContent
+                            
+                        });
+                return queury.ToArray();
+
+
+            }
+        }
+        public bool EditPGame(PGameEdit model)
+        {
+            
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
                         .PokemonGames
-                        .Single(e => e.PGameId == id && e.OwnerId == _userID);
-                new PGameDetail
-                {
-                    PGameId = entity.PGameId,
-                    GameName = entity.GameName,
-                    GamePrice = entity.GamePrice,
-                    GameImage = entity.GameImage,
-                    HasCase = entity.HasCase,
-                    Console = entity.Console
-                };
-                string GameString = entity.GameName;
-                return GameString;
-                    }
-                    
-   
-        }*/
-        public bool UpdatePGame(PGameEdit model)
+                        .Single(e => e.PGameId == model.PGameId && e.OwnerId == _userID);
+
+                entity.PGameId = model.PGameId;
+                entity.GameName = model.GameName;
+                entity.GamePrice = model.GamePrice;
+                entity.HasCase = model.HasCase;
+                entity.Console = model.Console;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+       /* public bool UpdatePGame(PGameEdit model)
         {
             Stream fileStream = model.File.InputStream;
             BinaryReader reader = new BinaryReader(fileStream);
@@ -110,14 +129,13 @@ namespace PokeCenter.Services
                 entity.PGameId = model.PGameId;
                 entity.GameName = model.GameName;
                 entity.GamePrice = model.GamePrice;
-                entity.File = model.File;
-                entity.FileContent = bytes;
+
                 entity.HasCase = model.HasCase;
                 entity.Console = model.Console;
 
                 return ctx.SaveChanges() == 1;
             }
-        }
+        }*/
         public bool DeletePG(int PGameId)
         {
             using (var ctx = new ApplicationDbContext())
@@ -132,24 +150,7 @@ namespace PokeCenter.Services
                 return ctx.SaveChanges() == 1;
             }
         }
-        public byte[] GettingImage(int Id)
-        {
-            using (var ctx = new ApplicationDbContext())
-            {
-                var entity =
-                    ctx
-                        .PokemonGames
-                        .Single(e => e.PGameId == Id);
-                new PGame
-                {
-                    PGameId = entity.PGameId,
-                    FileContent = entity.FileContent,
-                };
-
-                byte[] image = entity.FileContent;
-                return image;
-            }
-        }
+        
        /* public HttpPostedFile PostedImage(int Id)
         {
             byte[] bytes = GettingImage(Id);

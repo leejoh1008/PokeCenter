@@ -38,7 +38,7 @@ namespace PokeCenter.Services
         }
 
         public IEnumerable<MessageListItem> GetMessages()
-        {
+            {
             using (var ctx = new ApplicationDbContext())
             {
                 var query =

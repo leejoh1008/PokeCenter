@@ -280,7 +280,6 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\PCard\CardIndex.cshtml" />
-    <Content Include="Views\Message\MessageIndex.cshtml" />
     <Content Include="Views\PGame\GameIndex.cshtml" />
     <Content Include="Views\PGame\EditPG.cshtml" />
     <Content Include="Views\PCard\EditPC.cshtml" />

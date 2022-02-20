@@ -31,7 +31,7 @@
             @Html.DisplayNameFor(model => model.IsHolo)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CardImage)
+            @Html.DisplayNameFor(model => model.FileContent)
         </th>
         <th></th>
     </tr>
@@ -55,17 +55,27 @@
                 @Html.DisplayFor(modelItem => item.IsHolo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CardImage)
+                @if (item.FileContent != null)
+                {
+                    var base64 = Convert.ToBase64String(item.FileContent); var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+                    <img src=@imgSrc , class="Postimg" , alt="Pokemon" />
+                }
+                else
+                {
+                    <img src="" class="img-fluid" alt="Pokemon" />
+                }
             </td>
             <td>
-                <img src="/Content/RetrieveImage/@item.PCardId" alt="" height=100 width=200 />
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "EditPC", new {  id=item.PCardId }) |
+                @Html.ActionLink("Delete", "DeletePC", new {  id=item.PCardId })
             </td>
         </tr>
     }
 
 </table>
+<style>
+    .Postimg {
+        width: 100px;
+        height: 150px;
+    }
+</style>

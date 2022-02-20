@@ -15,7 +15,10 @@ namespace PokeCenterFP.WebMVC.Controllers
         // GET: PGame
         public ActionResult GameIndex()
         {
-            var model = new PGameListItem[0];
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new PGameService(userId);
+            var model = service.GetAllPGame();
+
             return View(model);
         }
         public ActionResult CreatePG()
@@ -62,9 +65,7 @@ namespace PokeCenterFP.WebMVC.Controllers
                     GameName = detail.GameName,
                     GamePrice = detail.GamePrice,
                     HasCase = detail.HasCase,
-                    Console = detail.Console,
-                    File = detail.File,
-                    FileContent = detail.FileContent
+                    Console = detail.Console
                 };
 
             return View(model);
@@ -85,7 +86,7 @@ namespace PokeCenterFP.WebMVC.Controllers
 
             var service = CreatePGameService();
 
-            if (service.UpdatePGame(model))
+            if (service.EditPGame(model))
             {
                 TempData["SaveResult"] = "Your game was updated successfully!";
                 return RedirectToAction("GameIndex");
@@ -123,11 +124,6 @@ namespace PokeCenterFP.WebMVC.Controllers
 
             return RedirectToAction("GameIndex");
         }
-        public ActionResult GetImage(int Id)
-        {
-            var service = CreatePGameService();
-            byte[] bytes = service.GettingImage(Id); //Get the image from your database
-            return File(bytes, "image/png"); //or "image/jpeg", depending on the format
-        }
+        
     }
 }

@@ -31,6 +31,7 @@ namespace PokeCenter.Services
 
             var content = new PCard()
             {
+                OwnerId = _userID,
                 CardName = contentViewModel.CardName,
                 CardGrade = contentViewModel.CardGrade,
                 CardPrice = contentViewModel.CardPrice,
@@ -42,9 +43,7 @@ namespace PokeCenter.Services
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Configuration.AutoDetectChangesEnabled = false;
                 ctx.PokemonCards.Add(content);
-                ctx.Configuration.AutoDetectChangesEnabled = true;
                 return ctx.SaveChanges() == 1;
 
             }
@@ -71,13 +70,30 @@ namespace PokeCenter.Services
                     };
             }
         }
-        public bool UpdatePCard(PCardEdit model)
+        public IEnumerable<PCardListItem> GetAllPCard()
         {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var queury =
+                    ctx
+                        .PokemonCards
+                        .Where(e => e.OwnerId == _userID)
+                        .Select(entity => new PCardListItem
+                        {
+                            PCardId = entity.PCardId,
+                            CardName = entity.CardName,
+                            CardGrade = entity.CardGrade,
+                             CardPrice=entity.CardPrice,
+                             IsHolo=entity.IsHolo,
+                            FileContent = entity.FileContent
+                        });
+                return queury.ToArray();
 
-            Stream fileStream = model.File.InputStream;
-            BinaryReader reader = new BinaryReader(fileStream);
-            var bytes = reader.ReadBytes((Int32)fileStream.Length);
 
+            }
+        }
+        public bool UpdatePCard(PCardEdit model)
+        { 
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
@@ -89,8 +105,6 @@ namespace PokeCenter.Services
                 entity.CardName = model.CardName;
                 entity.CardPrice = model.CardPrice;
                 entity.CardGrade = model.CardGrade;
-                entity.File = model.File;
-                entity.FileContent = bytes;
                 entity.IsHolo = model.IsHolo;
 
                 return ctx.SaveChanges() == 1;

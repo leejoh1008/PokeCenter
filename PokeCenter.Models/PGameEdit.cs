@@ -26,8 +26,7 @@ namespace PokeCenter.Models
         [Required]
         [Display(Name = "Case?:")]
         public bool HasCase { get; set; }
-        public byte[] FileContent { get; set; }
-        [NotMapped]
-        public HttpPostedFileBase File { get; set; }
+        
+
     }
 }

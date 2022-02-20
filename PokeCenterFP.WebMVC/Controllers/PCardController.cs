@@ -15,7 +15,10 @@ namespace PokeCenterFP.WebMVC.Controllers
         // GET: PGame
         public ActionResult CardIndex()
         {
-            var model = new PCardListItem[0];
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new PCardService(userId);
+            var model = service.GetAllPCard();
+
             return View(model);
         }
         public ActionResult CreatePC()
@@ -62,9 +65,7 @@ namespace PokeCenterFP.WebMVC.Controllers
                     CardName = detail.CardName,
                     CardPrice = detail.CardPrice,
                     CardGrade = detail.CardGrade,
-                    IsHolo = detail.IsHolo,
-                    File = detail.File,
-                    FileContent = detail.FileContent
+                    IsHolo = detail.IsHolo
                 };
 
             return View(model);

@@ -30,7 +30,7 @@
             @Html.DisplayNameFor(model => model.HasCase)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.GameImage)
+            @Html.DisplayNameFor(model => model.FileContent)
         </th>
         <th></th>
     </tr>
@@ -53,18 +53,28 @@
         @Html.DisplayFor(modelItem => item.HasCase)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.GameImage)
+        @if (item.FileContent != null)
+        {
+            var base64 = Convert.ToBase64String(item.FileContent); var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+            <img src=@imgSrc , class="Postimg" , alt="Pokemon" />
+        }
+        else
+        {
+            <img src="" class="img-fluid" alt="Pokemon" />
+        }
     </td>
-
-    <!--<td>
-        <img src="/Content/RetrieveImage/item.PGameId" alt="" height=100 width=200 />
-    </td>-->
     <td>
-        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        @Html.ActionLink("Edit", "EditPG", new {  id=item.PGameId }) 
+        @Html.ActionLink("Delete", "DeletePG", new { id = item.PGameId })
     </td>
 </tr>
 }
 
 </table>
+<style>
+    .Postimg{
+        width : 100px;
+        height : 150px; 
+    }
+
+</style>
